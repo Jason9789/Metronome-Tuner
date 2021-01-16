@@ -16,16 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="메트로놈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL1-kl-8Mu">
-                                <rect key="frame" x="138" y="424" width="139" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL1-kl-8Mu">
+                                <rect key="frame" x="147" y="184" width="120" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="120" id="qRC-yp-Ikt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4z4-Qo-3RK">
+                                <rect key="frame" x="284" y="190" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4z4-Qo-3RK" secondAttribute="height" multiplier="1:1" id="XS0-7m-fWG"/>
+                                    <constraint firstAttribute="width" constant="60" id="bzY-Du-rwd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjx-Oa-ukK">
+                                <rect key="frame" x="79" y="190" width="60" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="-"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bL1-kl-8Mu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="081-KU-oXA"/>
+                            <constraint firstItem="tjx-Oa-ukK" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="1JU-UD-xZ0"/>
+                            <constraint firstItem="tjx-Oa-ukK" firstAttribute="firstBaseline" secondItem="4z4-Qo-3RK" secondAttribute="baseline" id="6hj-5e-TE1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="bL1-kl-8Mu" secondAttribute="trailing" constant="147" id="8B2-MB-Feg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="4z4-Qo-3RK" secondAttribute="trailing" constant="70" id="Dgo-aP-5qK"/>
+                            <constraint firstItem="tjx-Oa-ukK" firstAttribute="top" secondItem="4z4-Qo-3RK" secondAttribute="top" id="P61-bh-bq5"/>
+                            <constraint firstItem="bL1-kl-8Mu" firstAttribute="leading" secondItem="tjx-Oa-ukK" secondAttribute="trailing" constant="8" id="PIM-Sf-bGv"/>
+                            <constraint firstItem="bL1-kl-8Mu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="RDW-jK-Rf6"/>
+                            <constraint firstItem="4z4-Qo-3RK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="146" id="xYt-eq-DzG"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="메트로놈" image="timer" catalog="system" id="yHv-X0-9rw"/>
                 </viewController>
@@ -64,6 +91,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zo4-h6-n6k" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rts-mI-CDp">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
