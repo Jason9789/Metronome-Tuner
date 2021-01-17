@@ -8,12 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     let bpmLabel = UILabel()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    
+    @IBAction func startButton(_ sender: UIButton) {
+        
+        switch sender.titleLabel?.text {
+        case "START":
+            sender.setTitle("STOP", for: .normal)
+        default:
+            sender.setTitle("START", for: .normal)
+        }
     }
-}
+        
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+        }
+    }
 
